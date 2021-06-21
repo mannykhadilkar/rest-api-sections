@@ -273,7 +273,7 @@ mkdir log
 Then we will install a bunch of tools we need to set up our app:
 
 ```
-sudo apt-get install python-pip python3-dev libpq-dev
+sudo apt-get install python3-pip python3-dev libpq-dev
 ```
 
 Next, we will install `virtualenv`, which is a python library used to create virtual environment. Since we may want to deploy several services on one server in the future, using virtual environment allows us to create independent environment for each project so that their dependencies won't affect each other. We may install `virtualenv` using the following command:
@@ -285,10 +285,10 @@ pip install virtualenv
 After it is installed, we can create a `virtualenv`:
 
 ```
-virtualenv venv --python=python3.5
+virtualenv venv --python=python3.8.5
 ```
 
-Note that `Ubuntu` usually comes with `Python3.5` and it is what we used in the sample code, if you choose to use different versions of `Python`, feel free to change it accordingly and it will be the Python version inside your `virtualenv`.
+Note that `Ubuntu` usually comes with `Python3.8.5` and it is what we used in the sample code, if you choose to use different versions of `Python`, feel free to change it accordingly and it will be the Python version inside your `virtualenv`.
 
 To activate `virtualenv`:
 
